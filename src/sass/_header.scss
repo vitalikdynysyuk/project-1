@@ -25,12 +25,13 @@ header {
     }
     @media screen and (min-width: 768px) {
     }
-  }
-  .logo {
-    @media screen and (min-width: 768px) {
-      margin-top: 37px;
+    .logo {
+      @media screen and (min-width: 768px) {
+        margin-top: 37px;
+      }
     }
   }
+
   .title {
     position: absolute;
     top: 193px;
@@ -179,7 +180,7 @@ header {
   }
 }
 
-.button-tablet {
+.button-nav-tablet {
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -230,29 +231,26 @@ header {
     margin-left: 291px;
   }
   display: none;
-}
-
-.icon-open {
-}
-.menu-button .icon-close {
-  display: none;
-}
-.menu-button.is-open .icon-close {
-  display: block;
-  width: 20px;
-  height: 12px;
-  fill: black;
-  z-index: 999;
-}
-.menu-button.is-open .icon-open {
-  display: none;
-}
-.menu-button.is-open {
-  @media screen and (min-width: 768px) {
-    position: fixed;
-    margin-left: 100px;
-    top: -5px;
-    right: 34px;
+  .icon-close {
+    display: none;
+  }
+  &.is-open .icon-close {
+    display: block;
+    width: 20px;
+    height: 12px;
+    fill: black;
+    z-index: 999;
+  }
+  &.is-open .icon-open {
+    display: none;
+  }
+  &.is-open {
+    @media screen and (min-width: 768px) {
+      position: fixed;
+      margin-left: 100px;
+      top: -5px;
+      right: 34px;
+    }
   }
 }
 
@@ -267,8 +265,6 @@ header {
   @media screen and (min-width: 1200px) {
     bottom: 45px;
     left: 31px;
-  }
-  .milk-image {
   }
   .milk-flex {
     display: flex;
@@ -475,7 +471,7 @@ header {
     display: none;
   }
 }
-.left-nav {
+.nav {
   display: block;
   list-style: none;
   @media screen and (min-width: 1200px) {
@@ -485,7 +481,7 @@ header {
     margin-top: -1px;
     z-index: 999;
   }
-  .left-item {
+  .item {
     display: flex;
     align-items: center;
     height: 42px;
@@ -499,7 +495,7 @@ header {
       border: 0;
     }
   }
-  .left-link {
+  .link {
     margin-left: 21px;
     font-family: DM Sans;
     font-style: normal;
@@ -524,7 +520,7 @@ header {
       justify-content: center;
     }
   }
-  .left-link:hover {
+  .link:hover {
     color: $title-pink;
   }
 }
