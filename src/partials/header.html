@@ -47,7 +47,14 @@
       </div>
     </div>
     <div class="milk">
-      <img src="./images/milk-image.png" alt="" class="milk-image" />
+      <picture>
+        <source srcset="./images/milk-image.png 1x" media="(max-width:768px)" />
+        <source
+          srcset="./images/milk-desktop.png 1x"
+          media="(min-width:1200px)"
+        />
+        <img src="./images/milk-image.png" class="milk-image" alt="" />
+      </picture>
       <div class="milk-flex">
         <p class="milk-text">
           Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit,<br />
@@ -56,7 +63,13 @@
         <img src="./images/arrow.png" alt="" class="milk-button" />
       </div>
     </div>
-    <img src="./images/tasty.png" alt="" class="tasty" />
+    <picture>
+      <source
+        srcset="./images/tasty-desktop.png 1x"
+        media="(min-width:1200px)"
+      />
+      <img src="./images/tasty.png" alt="" class="tasty" />
+    </picture>
 
     <ul class="stats">
       <li class="stats-item">
@@ -77,6 +90,10 @@
         <source
           srcset="./images/ice-cream-tablet.png 1x"
           media="(min-width:768px) and (max-width:1199px)"
+        />
+        <source
+          srcset="./images/ice-cream-desktop.png 1x"
+          media="(max-width:1200px)"
         />
         <img src="./images/ice-cream.png" class="ice-cream" alt="" />
       </picture>
