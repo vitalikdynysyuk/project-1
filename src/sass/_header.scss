@@ -1,11 +1,12 @@
 header {
   background-color: $header-pink;
+  margin: 0;
 }
 .nav-flex {
   display: flex;
   align-items: center;
   @media screen and (min-width: 768px) {
-    margin-top: 38px;
+    margin-top: 37px;
   }
 }
 .header {
@@ -416,9 +417,9 @@ header {
   list-style: none;
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-top: 42px;
+    margin-top: 39.5px;
     position: absolute;
-    left: 300px;
+    left: 280px;
     top: 0;
     z-index: 100;
   }
