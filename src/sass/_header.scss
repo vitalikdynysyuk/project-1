@@ -2,6 +2,23 @@ header {
   background-color: $header-pink;
   margin: 0;
   overflow: hidden;
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    @media screen and (min-width: 768px) {
+      padding-left: 34px;
+      padding-right: 34px;
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 36px;
+      padding-right: 115px;
+      width: 1280px;
+    }
+  }
   .header {
     position: relative;
     height: 502px;
