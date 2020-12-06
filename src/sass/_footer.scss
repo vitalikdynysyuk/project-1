@@ -3,6 +3,8 @@ footer {
   background-color: $footer-pink;
   padding-bottom: 25px;
   width: 100%;
+  margin: 0;
+  padding: 0;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 18px;
@@ -40,7 +42,6 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 1291px;
-  margin-top: 200px;
 
   position: relative;
 
@@ -48,14 +49,14 @@ footer {
     width: 700px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 547px;
+    padding-top: 532px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1050px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 556px;
+    padding-top: 522px;
   }
 }
 
@@ -106,8 +107,8 @@ footer {
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 61px 30px 51px 30px;
-    width: 270px;
+    padding: 61px 43px 51px 43px;
+    width: 244px;
 
     &:nth-child(1) {
       top: -102px;
@@ -145,10 +146,10 @@ footer {
     @extend .title-item-one;
     width: 130px;
     background: #c2e297;
+  }
 
-    @media screen and (min-width: 768px) {
-      height: 28px;
-    }
+  .footer-list-item {
+    margin-right: 0;
   }
 
   &-item {
@@ -162,6 +163,7 @@ footer {
       }
     }
     @media screen and (min-width: 1200px) {
+      width: 243px;
       &:not(:last-child) {
         margin-bottom: 32px;
       }
@@ -229,7 +231,10 @@ footer {
       }
 
       @media screen and (min-width: 1200px) {
+        height: 50px;
         font-size: 16px;
+        width: 243px;
+        margin: 0;
       }
     }
   }
@@ -271,6 +276,12 @@ footer {
         @media screen and (min-width: 768px) {
           font-size: 14px;
         }
+
+        @media screen and (min-width: 1200px) {
+          font-size: 16px;
+          line-height: 186%;
+          height: 30px;
+        }
       }
       .openOnTime {
         height: 21px;
@@ -287,7 +298,18 @@ footer {
         @media screen and (min-width: 768px) {
           font-size: 14px;
         }
+
+        @media screen and (min-width: 1200px) {
+          font-size: 16px;
+          line-height: 186%;
+          height: 30px;
+        }
       }
+    }
+  }
+  .contacts-list.footer-list-item {
+    @media screen and (min-width: 1200px) {
+      height: 50px;
     }
   }
 
@@ -306,6 +328,11 @@ footer {
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 183%;
     }
   }
 }
@@ -419,6 +446,24 @@ footer {
   color: #ffa5ba;
 
   width: 232px;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 15px;
+  }
 }
 
 .passion {
@@ -433,6 +478,22 @@ footer {
   color: #d41443;
 
   width: 200px;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .intro-list {
@@ -455,6 +516,11 @@ footer {
   }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -467,8 +533,11 @@ footer {
     }
 
     .icon {
-      max-width: 19px;
-      max-height: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 20px;
+      max-height: 20px;
       fill: #fff;
     }
 
