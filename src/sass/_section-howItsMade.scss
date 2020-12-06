@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.howItsMade .container {
+  @media screen and (min-width: 1200px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1200px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+.howItsMade {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $footer-pink;
+  @media screen and (max-width: 767px) {
+    padding-top: 125px;
+    padding-bottom: 145px;
+    background-position-y: 45%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('./../images/bcg-milk-mobile.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('./../images/bcg-milk-mobile@2x.png');
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 246px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 100%;
+    background-position-y: 35%;
+    background-repeat: no-repeat;
+    background-image: url('../images/bcg-milk.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/bcg-milk@2x.png');
+    }
+    padding-top: 125px;
+    padding-bottom: 310px;
+  }
+}
+
+.tradition-title {
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  margin-bottom: 15px;
+  font-family: $accent-font;
+  font-weight: 400;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.how-made-title {
+  text-transform: uppercase;
+  color: $title-pink;
+  text-align: center;
+  font-family: $accent-font;
+  font-weight: 400;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 26px;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 55px;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+.cow {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 46px;
+  }
+}
+.howItsMade .text {
+  font-family: $main-font;
+  font-weight: 500;
+  color: #000000;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    margin-bottom: 35px;
+  }
+
+  &-about {
+    font-family: $main-font;
+    font-weight: 500;
+    color: #907e82;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 17px;
+
+      padding-right: 30px;
+      padding-left: 30px;
+      font-size: 12px;
+      line-height: 1.62;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.76;
+    }
+  }
+}
+
+.text-about-paragraph {
+  font-family: $main-font;
+  font-weight: 500;
+  color: #907e82;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 1.62;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+}
+
+.howItsMade-button {
+  @media screen and (max-width: 767px) {
+    margin-left: 30px;
+    margin-bottom: 39px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 176px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $title-pink;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: #ecebeb;
+  }
+}
+.cow-arrow {
+  margin-left: 13px;
+}
+
+.bucket-img,
+.bucket-apples-img,
+.ice-cream-img {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.item-quantity {
+  color: $title-pink;
+  text-transform: uppercase;
+  font-family: $accent-font;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.item-about {
+  font-family: $main-font;
+  font-weight: 700;
+  color: #000000;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.74;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 38px;
+    }
+  }
+}
+
+.products-wrapper .item {
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 70px;
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc(100% - (60px * 3) / 3);
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - (30px * 3) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.wrapper-cow {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 66px;
+  }
+}
+.howItsMade-text-wrapper {
+  font-family: $main-font;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    margin-left: 17px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    margin-left: 74px;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+}
+.products-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}

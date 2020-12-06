@@ -104,26 +104,22 @@ footer {
     }
   }
 
-
   @media screen and (min-width: 768px) {
     padding: 50px 30px;
     width: 220px;
 
     &:not(:last-child) {
       margin-right: 20px;
-        }
-
+    }
   }
-
 
   @media screen and (min-width: 1200px) {
     padding: 61px 43px 51px 43px;
     width: 330px;
-    
+
     &:not(:last-child) {
       margin-right: 30px;
-      }
-
+    }
   }
 
   .title-item-one {
@@ -446,6 +442,10 @@ footer {
 
   width: 232px;
 
+  @media screen and (min-width: 767px) {
+    margin-bottom: 10px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 340px;
 
@@ -632,4 +632,9 @@ footer {
   .footer-flex {
     margin-bottom: 97px;
   }
+}
+.white-elem {
+  width: 100vw;
+  height: 102px;
+  background-color: white;
 }

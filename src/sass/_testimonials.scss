@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+$slider-length: 3;
+$radioBtn-size: 12px;
+$btn-color: #ccc;
+$active-color: #333;
+
+html,
+body {
+  height: 100%;
+}
+.testimonials {
+  height: 100%;
+  padding-top: 80px;
+  @media screen and (min-width: 768px) {
+    padding-top: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+  }
+
+  .quotation {
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 43px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    background-color: #fafafa;
+    background-image: url('./../images/text-background.png'),
+      url('./../images/quotes.png');
+    background-repeat: no-repeat;
+    background-position: center 70px, top 20px left 40px;
+    @media screen and (min-width: 768px) {
+      background-image: url('./../images/text-background-tablet.png'),
+        url('./../images/quotes.png');
+      background-position: center 28px, top 28px left 56px;
+      padding-bottom: 39px;
+      max-width: 600px;
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url('./../images/text-background-desktop.png'),
+        url('./../images/quotes.png');
+      background-position: center 32px, top 26px left 50px;
+      max-width: 926px;
+    }
+  }
+  .text {
+    max-width: 460px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 216%;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 760px;
+      font-size: 16px;
+      line-height: 186%;
+    }
+  }
+
+  .dots {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .name {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    text-align: center;
+    color: #000000;
+  }
+  .slider__image {
+    margin-bottom: 29px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 19px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+.background-ice-cream {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: -48px;
+
+    left: calc((100% - 320px) / 2);
+
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      top: -106px;
+      left: calc((100% - 786px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      top: -170px;
+      left: calc((100% - 1280px) / 2);
+    }
+  }
+}
+.slider {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+
+  &__nav {
+    width: $radioBtn-size;
+    height: $radioBtn-size;
+    margin: 2rem $radioBtn-size;
+    border-radius: 50%;
+    background-color: #ccc;
+    z-index: 10;
+    cursor: pointer;
+    appearance: none;
+    backface-visibility: hidden;
+    outline: none;
+
+    &:checked {
+      // animation: check 0.5s linear forwards;
+      background-image: url('./../images/home.svg');
+      border-radius: 0;
+      background-color: #fff;
+      background-repeat: no-repeat;
+
+      @for $i from 0 to $slider-length {
+        &:nth-of-type(#{$i + 1}) {
+          ~ .slider__inner {
+            transform: translateX((-100% * $i) / $slider-length);
+          }
+        }
+      }
+    }
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% * $slider-length;
+    height: 100%;
+    transition: all 1s ease-out;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  &__contents {
+    height: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    font-size: 2.7rem;
+  }
+
+  &__caption {
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+  }
+
+  &__txt {
+    color: #999;
+    margin-bottom: 3rem;
+    max-width: 300px;
+  }
+}
