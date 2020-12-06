@@ -1,102 +1,117 @@
-<header >
+<header>
   <div class="container">
-  <div class="header">
-    <div class="nav-flex">
-      <a href=""><img src="./images/logo.png" alt="" class="logo"/></a>
-      <div class="backdrop" backdrop-menu>
-        <div class="menu-container" id="menu-container" data-menu>
-          <button class="menu-button1">Buy now ></button>
-          <ul class="nav list">
-            <li class="item"><a href="" class="link">Home</a></li>
-            <li class="item">
-              <a href="" class="link">About us</a>
-            </li>
-            <li class="item">
-              <a href="" class="link">How it’s made?</a>
-            </li>
-            <li class="item">
-              <a href="" class="link">Our products</a>
-            </li>
-            <li class="item"><a href="" class="link">Contacts</a></li>
-          </ul>
+    <div class="header">
+      <div class="nav-flex">
+        <a href=""><img src="./images/logo.png" alt="" class="logo" /></a>
+        <div class="backdrop" backdrop-menu>
+          <div class="menu-container" id="menu-container" data-menu>
+            <button class="menu-button1">Buy now ></button>
+            <ul class="nav list">
+              <li class="item"><a href="" class="link">Home</a></li>
+              <li class="item">
+                <a href="" class="link">About us</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">How it’s made?</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Our products</a>
+              </li>
+              <li class="item"><a href="" class="link">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="menu-icon" width="20" height="20">
+            <use class="icon-open" href="./images/sprite.svg#icon-Burger"></use>
+            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <button class="button-nav-tablet">Buy now ></button>
+      </div>
+      <div class="title">
+        <h1 class="header-title">
+          ice cream <br />
+          made with <br />
+          <span> passion </span>
+        </h1>
+        <div class="title-buttons">
+          <button class="left-button">Products</button>
+          <button class="right-button">How it’s made?</button>
         </div>
       </div>
-      <button
-        type="button"
-        class="menu-button"
-        aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button
-      >
-        <svg class="menu-icon" width="20" height="15">
-          <use class="icon-open" href="./images/sprite.svg#icon-Burger"></use>
-          <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-      <button class="button-nav-tablet">Buy now ></button>
-    </div>
-    <div class="title">
-      <h1 class="header-title">
-        ice cream <br />
-        made with <br />
-        <span> passion </span>
-      </h1>
-      <div class="title-buttons">
-        <button class="left-button">Products</button>
-        <button class="right-button">How it’s made?</button>
+      <div class="milk">
+        <picture>
+          <source
+            srcset="./images/milk-image.png 1x"
+            media="(max-width:768px)"
+          />
+          <source
+            srcset="./images/milk-desktop.png 1x"
+            media="(min-width:1200px)"
+          />
+          <img src="./images/milk-image.png" class="milk-image" alt="" />
+        </picture>
+        <div class="milk-flex">
+          <p class="milk-text">
+            Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit,<br />
+            sed do eiusmod tempor <br />incididunt ut labore et
+          </p>
+          <img src="./images/arrow.png" alt="" class="milk-button" />
+        </div>
       </div>
-    </div>
-    <div class="milk">
-      <picture>
-        <source srcset="./images/milk-image.png 1x" media="(max-width:768px)" />
+      <picture class="tasty">
         <source
-          srcset="./images/milk-desktop.png 1x"
+          srcset="./images/tasty-desktop.png 1x"
           media="(min-width:1200px)"
         />
-        <img src="./images/milk-image.png" class="milk-image" alt="" />
+        <img src="./images/tasty.png" alt="" />
       </picture>
-      <div class="milk-flex">
-        <p class="milk-text">
-          Lorem ipsum dolor sit amet, <br />consectetur adipiscing elit,<br />
-          sed do eiusmod tempor <br />incididunt ut labore et
-        </p>
-        <img src="./images/arrow.png" alt="" class="milk-button" />
+      <ul class="stats">
+        <li class="stats-item first">
+          <div class="circle"></div>
+          <div class="main-text">16</div>
+          <div class="secondary-text">cafes</div>
+        </li>
+        <li class="stats-item second">
+          <div class="circle"></div>
+          <p class="main-text lol">23</p>
+          <div class="secondary-text">food trucks</div>
+        </li>
+      </ul>
+      <div class="sharik-i">
+        <div class="sharik"></div>
+        <picture>
+          <source
+            srcset="
+              ./images/ice-cream.png           1x,
+              ./images/ice-cream-mobile-x2.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <source
+            srcset="
+              ./images/ice-cream-tablet.png    1x,
+              ./images/ice-cream-tablet-x2.png
+            "
+            media="(min-width:768px) and (max-width:1199px)"
+          />
+          <source
+            srcset="
+              ./images/ice-cream-desktop.png    1x,
+              ./images/ice-cream-desktop-x2.png
+            "
+            media="(min-width:1200px)"
+          />
+          <img src="./images/ice-cream.png" class="ice-cream" alt="" />
+        </picture>
       </div>
     </div>
-    <picture class="tasty">
-      <source
-        srcset="./images/tasty-desktop.png 1x"
-        media="(min-width:1200px)"
-      />
-      <img src="./images/tasty.png" alt="" />
-    </picture>
-    <ul class="stats">
-      <li class="stats-item first">
-        <div class="circle"></div>
-        <div class="main-text">16</div>
-        <div class="secondary-text">cafes</div>
-      </li>
-      <li class="stats-item second">
-        <div class="circle"></div>
-        <p class="main-text lol">23</p>
-        <div class="secondary-text">food trucks</div>
-      </li>
-    </ul>
-    <div class="sharik-i">
-      <div class="sharik"></div>
-      <picture>
-        <source srcset="./images/ice-cream.png 1x, ./images/ice-cream-mobile-x2.png 2x" media="(max-width:767px)" />
-        <source
-          srcset="./images/ice-cream-tablet.png 1x, ./images/ice-cream-tablet-x2.png"
-          media="(min-width:768px) and (max-width:1199px)"
-        />
-        <source
-          srcset="./images/ice-cream-desktop.png 1x, ./images/ice-cream-desktop-x2.png"
-          media="(min-width:1200px)"
-        />
-        <img src="./images/ice-cream.png" class="ice-cream" alt="" />
-      </picture>
-    </div>
-  </div>
   </div>
 </header>
