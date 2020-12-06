@@ -23,14 +23,13 @@ footer {
   background-color: $footer-pink;
 
   @media screen and (min-width: 768px) {
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 34px;
+    padding-right: 34px;
     width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 115px;
-    padding-right: 115px;
+    padding: 0;
     width: 1050px;
   }
 }
