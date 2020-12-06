@@ -1,5 +1,41 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
+
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10" id="arrow">
+    <path d="M1.616 1l4.428 4-4.428 4" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" id="burger">
+    <path d="M0 1h20M0 7h20M0 13h20" stroke="#D41443"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="close">
+    <path d="M1.26 1l13.48 14M1 14.74L15 1.26" stroke="#fff"></path>
+  </symbol>
+  
+  
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 20" id="facebook">
+    <path d="M8.916 9.981h-2.61V19.6H2.351V9.98H.471V6.6h1.88V4.414c0-1.565.74-4.014 3.99-4.014l2.93.012v3.281H7.145c-.348 0-.839.176-.839.922v1.99h2.956L8.916 9.98z" fill="#fff"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="git-hub">
+    <path d="M10 .588C4.83.588.588 4.831.588 10c0 4.412 3.096 8.419 7.206 9.412v-3.114c-.407.09-.782.092-1.197-.03-.556-.165-1.008-.535-1.343-1.1-.214-.36-.593-.752-.988-.723l-.097-1.099c.855-.073 1.594.521 2.033 1.259.195.328.42.52.708.605.278.082.577.043.926-.08.087-.698.407-.96.648-1.327-2.451-.366-3.428-1.667-3.816-2.693-.514-1.363-.238-3.066.67-4.142.018-.02.05-.076.038-.114-.417-1.259.09-2.3.11-2.41.48.142.558-.143 2.088.786l.264.159c.11.066.076.028.187.02A7.987 7.987 0 0110 5.131a8.022 8.022 0 012.002.285l.086.009c-.008-.001.023-.006.075-.037 1.91-1.157 1.842-.779 2.354-.945.019.11.52 1.168.107 2.41-.055.172 1.657 1.74.708 4.257-.388 1.027-1.365 2.327-3.816 2.693.314.48.692.734.69 1.722v3.887c4.11-.993 7.206-5 7.206-9.412C19.412 4.83 15.17.588 10 .588z" fill="#fff"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12" id="home">
+    <path d="M12.24 5.775a.578.578 0 00-.049-.834L6.651.16a.698.698 0 00-.9.01L.193 5.196a.574.574 0 00-.027.833l.14.143c.23.238.604.266.834.063l.415-.367v5.373a.6.6 0 00.605.596h2.166a.6.6 0 00.605-.596V7.482h2.764v3.759c-.005.33.234.596.568.596h2.296a.6.6 0 00.604-.596V5.944l.257.222c.141.122.438.024.662-.22l.158-.17z" fill="#D31342"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12" id="one-dot">
+    <circle cx="6.395" cy="6" r="6" fill="#D9D9D9"></circle>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 4" id="red-dots">
+    <circle cx="16" cy="2" r="2" fill="#C7133E"></circle>
+    <circle cx="2" cy="2" r="2" fill="#C7133E"></circle>
+    <circle cx="30" cy="2" r="2" fill="#C7133E"></circle>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" id="telegram">
+    <path d="M8.103 10.375l-.318 4.17c.454 0 .651-.183.887-.401l2.13-1.9 4.415 3.017c.81.42 1.38.199 1.598-.695l2.898-12.673h.001c.257-1.118-.433-1.554-1.222-1.28L1.46 6.699c-1.162.42-1.145 1.026-.198 1.3l4.355 1.264 10.115-5.907c.476-.294.908-.132.552.163l-8.181 6.856z" fill="#fff"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 6" id="white-dots">
+    <circle cx="13" cy="3" r="3" fill="#fff"></circle>
+    <circle cx="3" cy="3" r="3" fill="#fff"></circle>
+    <circle cx="23" cy="3" r="3" fill="#fff"></circle>
+  </symbol>
 <symbol id="icon-Burger" viewBox="0 0 46 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
