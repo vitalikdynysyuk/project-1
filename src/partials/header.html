@@ -48,13 +48,10 @@
       </div>
       <div class="milk-item">
         <picture class="milk-image">
+          <source srcset="./images/milk-desktop.png 1x, ./images/milk-image-desktop-x2.png 2x " media="(min-width:1200px)" />
           <source
             srcset="./images/milk-image.png 1x"
             media="(max-width:768px)"
-          />
-          <source
-            srcset="./images/milk-desktop.png 1x"
-            media="(min-width:1200px)"
           />
           <img src="./images/milk-image.png"  alt="" />
         </picture>
@@ -68,9 +65,10 @@
       </div>
       <picture class="tasty-item">
         <source
-          srcset="./images/tasty-desktop.png 1x"
+          srcset="./images/tasty-desktop.png 1x, ./images/tasty-desktop-x2.png 2x"
           media="(min-width:1200px)"
         />
+        <source srcset="./images/tasty.png 1x, ./images/tasty-tablet-x2.png 2x" media="(min-width:768px)" />
         <img src="./images/tasty.png" alt="" />
       </picture>
       <ul class="stats">
